@@ -9,5 +9,4 @@ export interface ListProps {
 export interface TaskProps {
     id: number,
     name: string,
-    onDeleteClick: () => void
 }

@@ -1,26 +1,15 @@
-import { useState } from 'react'
-import Task from './components/Task'
+import { useEffect } from 'react'
 import List from './components/List'
+import useListContext from './hooks/useListContext'
 
 function App() {
-  const [toDoList, setToDoList] = useState([
-    {
-      id: 1,
-      name: "Task 1",
-      onDeleteClick: () => {}
-    }
-  ])
-  // const [doingList, setDoingList] = useState([])
-  // const [doneList, setDoneList] = useState([])
+  const { todoList } = useListContext()
 
-  const deleteTask = (id: number) => {
-    const tmpList = [...toDoList]
-    tmpList.
-  }
+  useEffect(() => console.log(todoList), [todoList])
 
   return (
     <>
-      <List id={1} name="Title" tasksList={toDoList} />
+      <List {...todoList} />
     </>
   )
 }
