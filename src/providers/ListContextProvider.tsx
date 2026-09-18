@@ -1,6 +1,6 @@
-import { useState, type ReactNode } from "react";
-import ListContext from "../contexts/ListContext";
-import type { ListProps, TaskProps } from "../types";
+import { useState, type ReactNode } from "react"
+import ListContext from "../contexts/ListContext"
+import type { ListProps, TaskProps } from "../types"
 
 interface Props {
     children: ReactNode

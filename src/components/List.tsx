@@ -3,7 +3,7 @@ import type { ListProps } from "../types"
 import Icon from "./Icon"
 import Task from "./Task"
 import TaskInput from "./TaskInput"
-import useListContext from "../hooks/useListContext";
+import useListContext from "../hooks/useListContext"
 
 function List ({ tasksList }: ListProps) {
     const [newTaskInputVisibility, setNewTaskInputVisibility] = useState(false)
@@ -54,15 +54,14 @@ function List ({ tasksList }: ListProps) {
                         ))
                     }
                 </ul>
-                {
-                    newTaskInputVisibility &&
-                        <TaskInput
-                            focus={newTaskInputFocus}
-                            value={newTaskName}
-                            onChange={e => setNewTaskName(e.target.value)}
-                            onBlur={putTask}
-                            onEnter={createMoreTasks}
-                        />
+                {newTaskInputVisibility &&
+                    <TaskInput
+                        focus={newTaskInputFocus}
+                        value={newTaskName}
+                        onChange={e => setNewTaskName(e.target.value)}
+                        onBlur={putTask}
+                        onEnter={createMoreTasks}
+                    />
                 }
                 <footer>
                     <button

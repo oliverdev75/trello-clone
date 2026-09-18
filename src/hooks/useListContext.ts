@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import ListContext from "../contexts/ListContext";
+import { useContext } from "react"
+import ListContext from "../contexts/ListContext"
 
 const useListContext = () => useContext(ListContext)
 

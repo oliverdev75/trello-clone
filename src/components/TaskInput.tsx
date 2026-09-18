@@ -24,7 +24,7 @@ function TaskInput ({ focus, value, onChange, onBlur, onEnter }: Props) {
     }
 
     return (
-        <div className="flex w-60 px-4 py-2 bg-white-200 rounded-lg justify-between items-center">
+        <div className="flex w-60 px-4 py-2 bg-gray-200 rounded-lg justify-between items-center">
             <input
                 ref={ref}
                 value={value}

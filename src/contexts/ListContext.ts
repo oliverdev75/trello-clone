@@ -1,5 +1,5 @@
-import { createContext } from "react";
-import type { ListProps, TaskProps } from "../types";
+import { createContext } from "react"
+import type { ListProps, TaskProps } from "../types"
 
 interface Props {
     todoList: ListProps,
